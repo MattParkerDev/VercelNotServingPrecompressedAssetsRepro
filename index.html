@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Repro</title>
+</head>
+
+<body>
+    <h1>Repro</h1>
+    <script>
+        async function fetchFile() {
+            const response = await fetch("System.Private.CoreLib.wasm");
+        }
+
+        fetchFile();
+    </script>
+</body>
+
+</html>
